@@ -1,0 +1,11 @@
+
+# General rule to allow anything to be crawled.
+User-agent: *
+Allow: /
+
+Sitemap: https://anands.netlify.app/#home
+Sitemap: https://anands.netlify.app/#about
+Sitemap: https://anands.netlify.app/#resume
+Sitemap: https://anands.netlify.app/#certifications
+Sitemap: https://anands.netlify.app/#contact
+Sitemap: https://anands.netlify.app/
