@@ -1,8 +1,13 @@
 
 !(function($) {
   "use strict";
-
-  
+  const Http = new XMLHttpRequest();
+  const url= 'https://me-backend-app.herokuapp.com/data';
+  Http.open("GET", url);
+  Http.send();
+  Http.onreadystatechange = (e) => {
+    console.log(Http.responseText)
+  }
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var hash = this.hash;
